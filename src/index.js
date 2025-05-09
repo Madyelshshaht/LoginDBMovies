@@ -77,7 +77,7 @@ app.post('/login', async (req, res) => {
 
         // إرسال الاستجابة
         res.status(200).json({
-            message: 'Login successful.', token, user: {
+            message: 'Login successfully', token, user: {
                 id: user._id,
                 email: user.email
             }
